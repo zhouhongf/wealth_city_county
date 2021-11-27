@@ -29,7 +29,7 @@ class Config:
         PORT=int(os.getenv('MYSQL_PORT', 3306)),
         DB=os.getenv('MYSQL_DB', GROUP_NAME),
         USER=os.getenv('MYSQL_USERNAME', 'root'),
-        PASSWORD=os.getenv('MYSQL_PASSWORD', '20110919Zyy==20170215Zyy'),
+        PASSWORD=os.getenv('MYSQL_PASSWORD', '123456'),
     )
 
     MONGO_DICT = dict(
@@ -37,7 +37,7 @@ class Config:
         PORT=int(os.getenv('MONGO_PORT', 27017)),
         DB=os.getenv('MONGO_DB', GROUP_NAME),
         USERNAME=os.getenv('MONGO_USERNAME', 'root'),
-        PASSWORD=os.getenv('MONGO_PASSWORD', 'Zhouhf873@'),
+        PASSWORD=os.getenv('MONGO_PASSWORD', '123456'),
     )
 
     # Redis数据库分类：
@@ -49,7 +49,7 @@ class Config:
         ENDPOINT=os.getenv('REDIS_ENDPOINT', HOST_LOCAL),
         PORT=int(os.getenv('REDIS_PORT', 6379)),
         DB=int(os.getenv('REDIS_DB', 3)),
-        PASSWORD=os.getenv('REDIS_PASSWORD', 'Zhouhf873@')
+        PASSWORD=os.getenv('REDIS_PASSWORD', '123456')
     )
 
     FILE_SUFFIX = ['.pdf', '.doc', '.docx']
